@@ -56,6 +56,11 @@ h3 {
   font-size: 34px;
 }
 
+p#scroll {
+    align-self: center;
+    color: white;
+}
+
 .project {
   width: 20%;
   float: left;
@@ -235,7 +240,8 @@ h3 {
   font-size: 40px;
   color: white;
   align-self: center;
-  flex:2;
+  flex:1;
+  margin-bottom: -54px;
 }
 
 .about-me p {
