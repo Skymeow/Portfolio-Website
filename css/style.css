@@ -48,6 +48,7 @@ h2 {
   font-size: 50px;
   z-index: 3;
   margin-left: 2%;
+  color: black;
 }
 
 h3 {
@@ -61,9 +62,15 @@ p#scroll {
     color: white;
 }
 
+.intro-two>p {
+    margin-left: 2%;
+    margin-top: -3%;
+}
+
 .project {
   width: 20%;
   float: left;
+  height: 751px;
 }
 
 #intro {
@@ -101,19 +108,33 @@ p#scroll {
   height: 69%;
 }
 
-.intro-three {
-  background-image: url("../img/drink.jpg");
+.intro-three > .content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 751px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 20%;
+  z-index: 4;
 }
 
-
-.intro-two {
-  background-image: url("../img/portfolio-pic-2.jpg");
+.intro-three >.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 751px;
+  width: 20%;
+  opacity: 0.9;
+  z-index: 1;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../img/drink.jpg");
+  filter: blur(5px);
+}
+
+.intro-two>.image-2 {
+  background-image: url("../img/portfolio-pic-2.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 .pic-project {
@@ -200,7 +221,6 @@ p#scroll {
   justify-content: center;
   background-color: white;
   height:751px;
-  /*background-size: cover;*/
 }
 
 .one-combine {
@@ -256,7 +276,7 @@ p#scroll {
   font-size: 30px;
   font-family: 'Merriweather', serif;
   text-align: center;
-  margin-top: 158px;
+  margin-top: 310px;
   z-index: 999;
   margin-left: 2%;
   margin-right: 2%;
